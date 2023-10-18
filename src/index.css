@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --darkColor: #171719;
+  --dropColor: #222128;
+  --whiteColor: #fff;
+  --grayColor: #cecece;
+  --violetColor: #9400ff;
+  --blueColor: #2196f3;
+  --greenColor: #12b57a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: var(--whiteColor) !important;
+  background-color: var(--darkColor) !important;
+}
+
+.form-control {
+  background-color: var(--dropColor) !important;
+  color: var(--whiteColor) !important;
+  border: 0 !important;
+  padding: 15px 10px !important;
+}
+
+.form-control::placeholder {
+  color: var(--grayColor) !important;
+}
+
+.btn-create {
+  border: 1px solid var(--violetColor) !important;
+  transition: all 0.25s ease-in-out !important;
+  background-color: var(--violetColor) !important;
+}
+
+.btn-create:hover {
+  border: 1px solid var(--violetColor) !important;
+  background-color: var(--dropColor) !important;
+}
+
+.fade {
+  transition: all 0.25s ease-out !important;
+}
+
+.modal-content,
+.modal-header,
+.modal-body {
+  background-color: var(--darkColor);
+  border: 0;
+}
+
+.modal-content {
+  background-color: var(--darkColor) !important;
+}
+
+.modal-header .btn-close {
+  background-color: var(--whiteColor);
+}
+
+.modal-body {
+  border-radius: 0 0 10px 10px;
+}
+
+.todo-list {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--dropColor);
+}
+
+.todo-datetime {
+  padding: 0 !important;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--grayColor);
+}
+
+.btn-setting {
+  padding: 5px 8px;
+  transition: all 0.25s ease-in;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn-edit {
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+  border: 2px solid var(--blueColor);
+}
+
+.btn-edit:hover {
+  background-color: var(--whiteColor);
+  color: var(--blueColor);
+}
